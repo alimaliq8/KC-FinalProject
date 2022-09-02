@@ -17,7 +17,7 @@ public class lvl2 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
     }
 }

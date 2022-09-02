@@ -5,29 +5,33 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class coin : MonoBehaviour
 {
-    public int score;
+    
+    public int score = 1;
+    public int inc = 1;
     public Text text;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void scorer()
+    {
+        score += inc;
+        text.text = score.ToString();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "coin")
+        if (collision.tag == "Player")
         {
-            score += 1;
+            
+            inc++;
             text.text = score.ToString();
-            Destroy(collision.gameObject);
-        }
-        if (score == 10)
-        {
-            SceneManager.LoadScene(1);
         }
     }
 }

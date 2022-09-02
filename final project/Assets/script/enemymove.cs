@@ -27,13 +27,10 @@ public class enemymove : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
        
-            if (collision.gameObject.tag == "Player")
+         
+        
         {
-            SceneManager.LoadScene(0);
-        }
-        if (collision.gameObject.tag == "wall")
-        {
-            Destroy(gameObject);
+            Destroy(gameObject,2f);
         }
       
     }

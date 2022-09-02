@@ -9,6 +9,13 @@ TagManager:
   - Teleporter
   - wall
   - coin
+  - coine
+  - door
+  - Enemya
+  - killE
+  - frog
+  - walle
+  - Enemyy
   layers:
   - Default
   - TransparentFX
