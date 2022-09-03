@@ -17,6 +17,6 @@ public class okey : MonoBehaviour
     }
    public void why()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }

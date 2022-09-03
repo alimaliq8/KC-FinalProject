@@ -8549,7 +8549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170781601}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 155.49, y: -10.67, z: 0}
+  m_LocalPosition: {x: 151.01, y: -11.26, z: 0}
   m_LocalScale: {x: 25.895548, y: 12.910232, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13025,7 +13025,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800890051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 134.8, y: -10.8, z: 0}
+  m_LocalPosition: {x: 130.67, y: -10.8, z: 0}
   m_LocalScale: {x: 25.895548, y: 12.910232, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14439,8 +14439,8 @@ GameObject:
   - component: {fileID: 2017017767}
   - component: {fileID: 2017017769}
   - component: {fileID: 2017017768}
-  - component: {fileID: 2017017770}
   - component: {fileID: 2017017771}
+  - component: {fileID: 2017017772}
   m_Layer: 0
   m_Name: spikes (23)
   m_TagString: Untagged
@@ -14527,8 +14527,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2017017770
-BoxCollider2D:
+--- !u!114 &2017017771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017017766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4b55afcef57144dbcac7742ed3471a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &2017017772
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14550,21 +14562,33 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.1}
-  m_EdgeRadius: 0
---- !u!114 &2017017771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017017766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d4b55afcef57144dbcac7742ed3471a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Points:
+    m_Paths:
+    - - {x: -0.074999996, y: 0.049999997}
+      - {x: -0.07520745, y: 0.009496834}
+      - {x: -0.06510085, y: 0.0098728305}
+      - {x: -0.06507021, y: -0.010357135}
+      - {x: -0.05524045, y: -0.010119559}
+      - {x: -0.055131335, y: -0.03999863}
+      - {x: -0.045034748, y: -0.039641958}
+      - {x: -0.044921663, y: -0.010822478}
+      - {x: -0.035121974, y: -0.010322573}
+      - {x: -0.034865353, y: 0.009402096}
+      - {x: -0.02520314, y: 0.010200076}
+      - {x: 0.014625728, y: 0.033872943}
+      - {x: 0.024729693, y: 0.032475475}
+      - {x: 0.024592591, y: 0.009633354}
+      - {x: 0.03486297, y: 0.00902103}
+      - {x: 0.035437286, y: -0.010629378}
+      - {x: 0.04446334, y: -0.0098642185}
+      - {x: 0.04474171, y: -0.040894028}
+      - {x: 0.055244874, y: -0.040212113}
+      - {x: 0.055266052, y: -0.010632665}
+      - {x: 0.065020174, y: -0.010566157}
+      - {x: 0.065250315, y: 0.008957705}
+      - {x: 0.075549535, y: 0.0090945065}
+      - {x: 0.074999996, y: 0.03}
+      - {x: 0.065, y: 0.049999997}
 --- !u!1 &2029720361
 GameObject:
   m_ObjectHideFlags: 0
